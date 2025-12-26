@@ -47,11 +47,11 @@ const Index = () => {
             </h1>
             <div className="flex flex-col items-center space-y-1 text-muted-foreground" style={{ fontFamily: 'Open Sans, sans-serif' }}>
               <a 
-                href="tel:+79041168223" 
+                href="tel:+79029755381" 
                 className="flex items-center space-x-2 hover:text-primary transition-colors duration-200"
               >
                 <Icon name="Phone" size={16} />
-                <span>+7 (904) 116-82-23</span>
+                <span>+7 (902) 975-53-81</span>
               </a>
               <a 
                 href="mailto:email@example.com" 
