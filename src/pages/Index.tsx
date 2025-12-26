@@ -43,7 +43,7 @@ const Index = () => {
 
           <div className="text-center space-y-2">
             <h1 className="text-3xl font-bold text-foreground" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Имя Отчество
+              Владислав Сергеевич
             </h1>
             <div className="flex flex-col items-center space-y-1 text-muted-foreground" style={{ fontFamily: 'Open Sans, sans-serif' }}>
               <a 
