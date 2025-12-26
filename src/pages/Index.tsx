@@ -29,7 +29,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 px-4 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 px-4 py-12">
       <div className="w-full max-w-md">
         <div className="flex flex-col items-center space-y-8 animate-fade-in bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
           <div className="relative group">
