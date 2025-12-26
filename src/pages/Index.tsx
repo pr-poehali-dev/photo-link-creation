@@ -54,11 +54,11 @@ const Index = () => {
                 <span>+7 (902) 975-53-81</span>
               </a>
               <a 
-                href="mailto:email@example.com" 
+                href="mailto:vladislavmaiorov13@yandex.ru" 
                 className="flex items-center space-x-2 hover:text-primary transition-colors duration-200"
               >
                 <Icon name="Mail" size={16} />
-                <span>email@example.com</span>
+                <span>vladislavmaiorov13@yandex.ru</span>
               </a>
             </div>
           </div>
