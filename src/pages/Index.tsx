@@ -2,27 +2,32 @@ import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const phoneNumber = "+79000000000";
+  const cardNumberTBank = "2200700000000000";
+  const cardNumberSber = "2202200000000000";
+  const cardNumberAlfa = "4154810000000000";
+
   const banks = [
     {
       name: "Т-Банк",
       color: "#FFDD2D",
       textColor: "#000000",
       icon: "Landmark",
-      link: "#"
+      link: `https://www.tbank.ru/rm/user.name/${phoneNumber.slice(1)}/`
     },
     {
       name: "Сбербанк",
       color: "#21A038",
       textColor: "#FFFFFF",
       icon: "Landmark",
-      link: "#"
+      link: `https://pay.sber.ru/${phoneNumber}`
     },
     {
       name: "Альфа-Банк",
       color: "#EF3124",
       textColor: "#FFFFFF",
       icon: "Landmark",
-      link: "#"
+      link: `https://alfa.me/${phoneNumber.slice(1)}`
     }
   ];
 
