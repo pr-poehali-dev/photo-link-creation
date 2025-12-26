@@ -35,8 +35,8 @@ const Index = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <img
-              src="https://cdn.poehali.dev/projects/9d462c1a-8a78-439e-b2ba-58fe70bbe1f5/files/a4343c14-da72-4c09-9573-4a372a48da54.jpg"
-              alt="Фото профиля"
+              src="https://cdn.poehali.dev/files/111.jpg"
+              alt="Владислав Сергеевич"
               className="relative w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-white"
             />
           </div>
