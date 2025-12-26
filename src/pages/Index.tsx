@@ -1,11 +1,90 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const banks = [
+    {
+      name: "Т-Банк",
+      color: "#FFDD2D",
+      textColor: "#000000",
+      icon: "Landmark",
+      link: "#"
+    },
+    {
+      name: "Сбербанк",
+      color: "#21A038",
+      textColor: "#FFFFFF",
+      icon: "Landmark",
+      link: "#"
+    },
+    {
+      name: "Альфа-Банк",
+      color: "#EF3124",
+      textColor: "#FFFFFF",
+      icon: "Landmark",
+      link: "#"
+    }
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen flex items-center justify-center bg-white px-4 py-12">
+      <div className="w-full max-w-md">
+        <div className="flex flex-col items-center space-y-8 animate-fade-in">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <img
+              src="https://cdn.poehali.dev/projects/9d462c1a-8a78-439e-b2ba-58fe70bbe1f5/files/a4343c14-da72-4c09-9573-4a372a48da54.jpg"
+              alt="Фото профиля"
+              className="relative w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-white"
+            />
+          </div>
+
+          <div className="text-center space-y-2">
+            <h1 className="text-3xl font-bold text-foreground" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              Имя Отчество
+            </h1>
+            <div className="flex flex-col items-center space-y-1 text-muted-foreground" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+              <a 
+                href="tel:+79000000000" 
+                className="flex items-center space-x-2 hover:text-primary transition-colors duration-200"
+              >
+                <Icon name="Phone" size={16} />
+                <span>+7 (900) 000-00-00</span>
+              </a>
+              <a 
+                href="mailto:email@example.com" 
+                className="flex items-center space-x-2 hover:text-primary transition-colors duration-200"
+              >
+                <Icon name="Mail" size={16} />
+                <span>email@example.com</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="w-full space-y-3 pt-4">
+            <p className="text-center text-sm text-muted-foreground mb-4" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+              Выберите банк для перевода
+            </p>
+            {banks.map((bank, index) => (
+              <Button
+                key={bank.name}
+                asChild
+                className="w-full h-14 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                style={{
+                  backgroundColor: bank.color,
+                  color: bank.textColor,
+                  fontFamily: 'Montserrat, sans-serif',
+                  animationDelay: `${index * 100}ms`
+                }}
+              >
+                <a href={bank.link} className="flex items-center justify-center space-x-3">
+                  <Icon name={bank.icon as any} size={24} />
+                  <span>{bank.name}</span>
+                </a>
+              </Button>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
