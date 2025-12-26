@@ -65,9 +65,13 @@ const Index = () => {
 
           <Button
             asChild
-            variant="outline"
-            className="w-full max-w-md h-12 text-base font-medium transition-all duration-300 hover:scale-105 hover:bg-[#0088cc] hover:text-white hover:border-[#0088cc]"
-            style={{ fontFamily: 'Open Sans, sans-serif' }}
+            size="sm"
+            className="h-10 px-6 text-sm font-medium transition-all duration-300 hover:scale-105"
+            style={{ 
+              backgroundColor: '#0088cc',
+              color: '#FFFFFF',
+              fontFamily: 'Open Sans, sans-serif'
+            }}
           >
             <a 
               href="https://t.me/V_S_Maiorov" 
@@ -75,7 +79,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2"
             >
-              <Icon name="Send" size={20} />
+              <Icon name="Send" size={18} />
               <span>Telegram</span>
             </a>
           </Button>
