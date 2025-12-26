@@ -2,10 +2,7 @@ import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const phoneNumber = "+79000000000";
-  const cardNumberTBank = "2200700000000000";
-  const cardNumberSber = "2202200000000000";
-  const cardNumberAlfa = "4154810000000000";
+  const phoneNumber = "+79041168223";
 
   const banks = [
     {
@@ -50,11 +47,11 @@ const Index = () => {
             </h1>
             <div className="flex flex-col items-center space-y-1 text-muted-foreground" style={{ fontFamily: 'Open Sans, sans-serif' }}>
               <a 
-                href="tel:+79000000000" 
+                href="tel:+79041168223" 
                 className="flex items-center space-x-2 hover:text-primary transition-colors duration-200"
               >
                 <Icon name="Phone" size={16} />
-                <span>+7 (900) 000-00-00</span>
+                <span>+7 (904) 116-82-23</span>
               </a>
               <a 
                 href="mailto:email@example.com" 
